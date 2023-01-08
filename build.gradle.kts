@@ -4,3 +4,7 @@ plugins {
     id("com.android.library") version "8.0.0-alpha11" apply false
     id("org.jetbrains.kotlin.android") version "1.8.0" apply false
 }
+
+tasks.register<Delete>("clean") {
+    delete(rootProject.buildDir)
+}
